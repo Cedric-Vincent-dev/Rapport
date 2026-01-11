@@ -416,8 +416,48 @@ Exemple :
 
 
 
-**4.9. Travail manuscrit**
-Insertion photos...
+
+**5. Calculs manuscrits**
+
+Le sujet demande explicitement de réaliser plusieurs conversions à la main afin de montrer la compréhension des méthodes vues précédemment.  
+Les calculs ont été effectués au stylo, étape par étape, puis photographiés.
+
+Les photos sont disponibles dans le dossier :
+
+```
+A3_Boole_Conversions/photos_calculs/
+```
+
+Elles contiennent les conversions suivantes :
+
+- Décimal → Binaire  
+- Binaire → Décimal  
+- Binaire → Hexadécimal  
+- Hexadécimal → Binaire  
+- Binaire → Octal  
+- Décimal → Hexadécimal  
+
+Chaque conversion est détaillée avec :
+
+- la méthode utilisée  
+- les étapes intermédiaires  
+- les regroupements (pour binaire → hexadécimal / octal)  
+- les divisions successives (pour décimal → binaire / hexadécimal)  
+- le résultat final  
+
+Ces calculs confirment la maîtrise des différentes techniques de conversion entre bases numériques.
+
+
+
+
+**6. Conclusion**
+
+Cette annexe a permis de revoir les notions essentielles liées à l’algèbre de Boole, aux portes logiques et aux conversions entre bases numériques. Ces concepts constituent le socle de l’informatique et de l’électronique moderne : ils décrivent la manière dont les circuits manipulent l’information, comment les processeurs prennent des décisions, et comment les données sont représentées et interprétées.
+
+Les différentes conversions réalisées — du décimal vers le binaire, du binaire vers l’hexadécimal ou l’octal, et inversement — illustrent concrètement le fonctionnement des systèmes de numération. Les calculs manuscrits confirment la compréhension des méthodes et renforcent la maîtrise des mécanismes fondamentaux.
+
+L’ensemble de ce travail offre une vision claire et structurée des bases du raisonnement logique et numérique, indispensables pour aborder sereinement les notions plus avancées en architecture des ordinateurs et en programmation bas niveau.
+
 
 
 
