@@ -131,3 +131,130 @@ Les portes **NAND** et **NOR** sont dites *fonctionnellement complètes* :
 on peut construire **toutes les autres portes** uniquement avec NAND ou uniquement avec NOR.
 C’est un concept fondamental en électronique numérique.
 
+
+
+
+
+**3. Algèbre de Boole**
+
+L’algèbre de Boole est un système mathématique qui manipule uniquement deux valeurs :  
+**0 (faux)** et **1 (vrai)**.  
+Elle est utilisée pour décrire le fonctionnement des circuits logiques, des processeurs et de tous les systèmes numériques.
+
+Elle repose sur trois opérations fondamentales :
+
+- **NON (¬A)**  
+- **ET (A ∧ B)**  
+- **OU (A ∨ B)**  
+
+À partir de ces opérations, on peut définir toutes les autres (XOR, NAND, NOR…).
+
+
+
+
+
+**3.1. Lois fondamentales**
+
+Les lois fondamentales de l’algèbre de Boole décrivent le comportement de base des opérations logiques.  
+Elles permettent de simplifier des expressions et de comprendre comment réagissent les circuits.
+
+**Identité**
+- \( A ∧ 1 = A \)  
+  → Multiplier par 1 ne change rien : si on “exige vrai”, on ne modifie pas la condition.  
+- \( A ∨ 0 = A \)  
+  → Ajouter un faux ne change rien : un OU avec 0 laisse A intact.
+
+**Nul**
+- \( A ∧ 0 = 0 \)  
+  → Une condition ET avec faux donne toujours faux.  
+- \( A ∨ 1 = 1 \)  
+  → Un OU avec vrai donne toujours vrai.
+
+**Idempotence**
+- \( A ∧ A = A \)  
+  → Dire “A ET A” ne renforce pas la condition.  
+- \( A ∨ A = A \)  
+  → Dire “A OU A” ne change rien non plus.
+
+**Complémentarité**
+- \( A ∧ ¬A = 0 \)  
+  → Une valeur et son contraire ne peuvent jamais être vraies en même temps.  
+- \( A ∨ ¬A = 1 \)  
+  → Une valeur ou son contraire est toujours vrai.
+
+**Double négation**
+- \( ¬(¬A) = A \)  
+  → Inverser deux fois revient à la valeur initiale.
+
+
+
+
+**3.2. Lois de commutation**
+
+- \( A ∧ B = B ∧ A \)  
+- \( A ∨ B = B ∨ A \)
+
+Ces lois montrent que l’ordre des entrées n’a pas d’importance.
+
+
+
+**3.3. Lois d’association**
+
+- \( (A ∧ B) ∧ C = A ∧ (B ∧ C) \)  
+- \( (A ∨ B) ∨ C = A ∨ (B ∨ C) \)
+
+Elles permettent de regrouper les termes comme on veut.
+
+
+
+**3.4. Lois de distribution**
+
+- \( A ∧ (B ∨ C) = (A ∧ B) ∨ (A ∧ C) \)  
+- \( A ∨ (B ∧ C) = (A ∨ B) ∧ (A ∨ C) \)
+
+Ce sont les lois les plus importantes pour simplifier des expressions.
+
+
+
+**3.5. Lois de De Morgan**
+
+Elles permettent de transformer une expression en inversant les opérateurs :
+
+- \( ¬(A ∧ B) = ¬A ∨ ¬B \)  
+- \( ¬(A ∨ B) = ¬A ∧ ¬B \)
+
+Ces lois sont essentielles en électronique, car elles permettent de remplacer des portes par d’autres (ex : remplacer un OU par un NAND).
+
+
+
+**3.6. Simplification d’expressions logiques**
+
+Quelques exemples classiques :
+
+- \( A ∨ (A ∧ B) = A \)  
+- \( A ∧ (A ∨ B) = A \)  
+- \( A ∨ ¬A = 1 \)  
+- \( A ∧ ¬A = 0 \)  
+- \( (A ∧ B) ∨ (A ∧ ¬B) = A \)
+
+Ces simplifications permettent de réduire le nombre de portes dans un circuit.
+
+
+
+**3.7. Pourquoi l’algèbre de Boole est essentielle**
+
+Elle permet de :
+
+- simplifier des circuits logiques  
+- réduire le nombre de portes (donc la consommation et le coût)  
+- comprendre le fonctionnement interne des processeurs  
+- analyser et concevoir des systèmes numériques  
+
+C’est la base de toute l’électronique moderne.
+
+
+
+
+
+
+
