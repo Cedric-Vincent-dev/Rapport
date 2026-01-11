@@ -257,4 +257,171 @@ C’est la base de toute l’électronique moderne.
 
 
 
+**4. Conversions entre bases**
+
+Les systèmes numériques utilisent différentes bases pour représenter les nombres :
+
+- **binaire (base 2)** : utilisé par les circuits électroniques  
+- **octal (base 8)** : utilisé historiquement pour compacter le binaire  
+- **décimal (base 10)** : utilisé par les humains  
+- **hexadécimal (base 16)** : utilisé pour représenter efficacement le binaire  
+
+Comprendre les conversions entre ces bases est essentiel pour lire des adresses mémoire, analyser des instructions machines, ou interpréter des données binaires.
+
+
+
+**4.1. Conversion binaire → décimal**
+
+Méthode :  
+Chaque bit représente une puissance de 2.
+
+Exemple :  
+\( 1011_2 \)
+
+\[
+1\cdot2^3 + 0\cdot2^2 + 1\cdot2^1 + 1\cdot2^0
+= 8 + 0 + 2 + 1 = 11_{10}
+\]
+
+
+
+**4.2. Conversion décimal → binaire**
+
+Méthode : divisions successives par 2.
+
+Exemple :  
+\( 25_{10} \)
+
+- 25 ÷ 2 = 12 reste 1  
+- 12 ÷ 2 = 6 reste 0  
+- 6 ÷ 2 = 3 reste 0  
+- 3 ÷ 2 = 1 reste 1  
+- 1 ÷ 2 = 0 reste 1  
+
+On lit les restes **de bas en haut** :
+
+\[
+25_{10} = 11001_2
+\]
+
+
+
+**4.3. Conversion binaire → hexadécimal**
+
+Méthode :  
+On regroupe les bits **par 4**, en partant de la droite.
+
+Exemple :  
+\( 11010110_2 \)
+
+Groupes :  
+1101 | 0110
+
+- 1101 = D  
+- 0110 = 6  
+
+\[
+11010110_2 = D6_{16}
+\]
+
+
+
+**4.4. Conversion hexadécimal → binaire**
+
+Méthode :  
+Chaque chiffre hexadécimal correspond à 4 bits.
+
+Exemple :  
+\( A3_{16} \)
+
+- A = 10 = 1010  
+- 3 = 3 = 0011  
+
+\[
+A3_{16} = 10100011_2
+\]
+
+
+
+**4.5. Conversion binaire → octal**
+
+Méthode :  
+On regroupe les bits **par 3**, en partant de la droite.
+
+Exemple :  
+\( 110101_2 \)
+
+Groupes :  
+110 | 101
+
+- 110 = 6  
+- 101 = 5  
+
+\[
+110101_2 = 65_8
+\]
+
+
+
+**4.6. Conversion octal → binaire**
+
+Méthode :  
+Chaque chiffre octal correspond à 3 bits.
+
+Exemple :  
+\( 57_8 \)
+
+- 5 = 101  
+- 7 = 111  
+
+\[
+57_8 = 101111_2
+\]
+
+
+
+**4.7. Conversion décimal → hexadécimal**
+
+Méthode : divisions successives par 16.
+
+Exemple :  
+\( 254_{10} \)
+
+- 254 ÷ 16 = 15 reste 14  
+- 15 ÷ 16 = 0 reste 15  
+
+Rappels :  
+- 14 = E  
+- 15 = F  
+
+Lecture de bas en haut :
+
+\[
+254_{10} = FE_{16}
+\]
+
+
+
+**4.8. Conversion hexadécimal → décimal**
+
+Méthode :  
+Chaque chiffre hexadécimal représente une puissance de 16.
+
+Exemple :  
+\( 3B_{16} \)
+
+\[
+3\cdot16^1 + 11\cdot16^0 = 48 + 11 = 59_{10}
+\]
+
+
+
+**4.9. Travail manuscrit**
+Insertion photos...
+
+
+
+
+
+
 
